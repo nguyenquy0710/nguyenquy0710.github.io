@@ -8,8 +8,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >-
-  - Architect is a theme for Github NguyenQuy.
-  - Architect is a theme for Github NguyenQuy.
+  Architect is a theme for Github NguyenQuy.
 
 # Build settings
 # theme: architect
