@@ -66,3 +66,15 @@ defaults:
       path: "assets/img"
     values:
       image: true
+
+# global permalink
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+# paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+collections:
+  my_collection:
+    output: true
+    permalink: /:collection/:name
