@@ -16,6 +16,10 @@ description: >-
 remote_theme: pages-themes/architect@v0.2.0
 encoding: utf-8
 timezone: Asia/Ho_Chi_Minh
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
 google_analytics:
 plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
@@ -45,3 +49,20 @@ whitelist:
 
 emoji:
   src: "/assets/images/emoji"
+
+# static files
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
