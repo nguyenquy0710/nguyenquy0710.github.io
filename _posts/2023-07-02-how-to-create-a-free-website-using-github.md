@@ -13,7 +13,7 @@ author: nhquydev
 {{ author.name }}
 </a>
 
-{% assign image_files = site.static_files | where: "image", true %}
+{% assign image_files = site.static_files %}
 {% for myimage in image_files %}
 {{ myimage.path }}
 {% endfor %}
