@@ -17,15 +17,31 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+#
+# -----
+# https://github.com/pages-themes/architect
+# https://docs.github.com/en/pages/quickstart
+# -----
 
-title: Odin - A Jekyll Knowledge Base Theme
+title: Site QuyIT
 description: Odin is a simple to setup and use Jekyll theme for help desks and knowledge bases. Hosts for free on Github Pages!
 # baseurl: /odin # the subpath of your site, e.g. /support
-# url: https://teaguns.github.io # the base hostname AND PROTOCOL for your site, e.g. http://example.com
-permalink: /:categories/:title
+url: https://github.quyit.id.vn # the base hostname AND PROTOCOL for your site, e.g. http://example.com
+# global permalink
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+# Enable safe mode
+safe: true
+
+# paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 content_type: Knowledge Base #Define whether this is a knowledge base, help center, or something else
 use_authors: true #Set this to false to disable showing post authors
+author:
+  name: Nguyen Quy
+  email: hello@quyit.id.vn
 
 brand_logo: logo.png
 brand_name: Odin
@@ -68,9 +84,39 @@ help_two_link: https://twitter.com/theteaguns
 
 # Build settings
 theme: minima
+encoding: utf-8
+timezone: Asia/Ho_Chi_Minh
+incremental: false
+highlighter: rouge
+markdown: kramdown
+excerpt_separator: <!--more-->
+analytics: UA-83979019-1
+google_analytics:
+gist:
+  noscript: false
 plugins:
   - jekyll-feed
   - jekyll-last-modified-at
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  - jekyll-import
+  - jemoji
+  - jekyll-sitemap
+# Whitelist plugins under safe mode. Note that `some-other-jekyll-plugin` is not listed here. Therefore, it will not be loaded under safe mode.
+whitelist:
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+exclude: ["README.md"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -84,3 +130,42 @@ plugins:
 sass:
   sass_dir: _scss
   style: :compressed
+
+#compress.html
+compress_html:
+  clippings:
+    [
+      html,
+      div,
+      p,
+      ul,
+      td,
+      h1,
+      h2,
+      h3,
+      h4,
+      link,
+      meta,
+      footer,
+      nav,
+      img,
+      header,
+      hr,
+      br,
+      head,
+      style,
+      li,
+      ul,
+      ol,
+      time,
+      main,
+      script,
+      title,
+    ]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
