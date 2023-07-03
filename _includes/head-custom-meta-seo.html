@@ -2,9 +2,12 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="{{ site.title | page.title | post.title | default: site.github.repository_name | smartify }}">
 <meta property="og:description"
-  content="{{ site.description | page.description | post.description | default: site.github.project_tagline | smartify }}">
+  content="{% if page.description %}{{ page.description | truncate: 200 }}{% else %}{{ site.description | truncate: 200  }}{% endif %}" />
 <meta property="og:url" content="{{ site.url | page.url | site.github.owner_url | absolute_url }}">
 <meta property="og:tags" content="{{ page.tags }}">
 <meta property="og:image" content="{{ post.feature | page.feature | site.feature }}">
 <meta property="og:image:alt" content="{{ page.tags }}">
 <!-- End SEO tag -->
+
+<meta itemprop="description" name="description"
+  content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
