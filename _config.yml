@@ -112,6 +112,7 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-snippets
+  - jekyll-admin
 # Whitelist plugins under safe mode. Note that `some-other-jekyll-plugin` is not listed here. Therefore, it will not be loaded under safe mode.
 whitelist:
   - jekyll-gist
