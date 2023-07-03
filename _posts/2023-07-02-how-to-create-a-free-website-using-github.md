@@ -18,5 +18,5 @@ tags: github
 
 {% assign image_files = site.static_files %}
 {% for myimage in image_files %}
-{{ myimage.path }}
+{{ myimage.path | absolute_url }}
 {% endfor %}
