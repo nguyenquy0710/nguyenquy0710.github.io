@@ -1,14 +1,10 @@
 <!-- Begin SEO tag -->
 <meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="{{ post.title | page.title | site.title | default: site.github.repository_name | smartify }}">
-<meta property="og:title" content="{{ post.title | page.title | site.title | default: site.github.repository_name | smartify }}">
+<meta property="og:site_name" content="{{ site.title | page.title | post.title | default: site.github.repository_name | smartify }}">
 <meta property="og:description"
-  content="{{ post.description | page.description | site.description | default: site.github.project_tagline | smartify }}">
-<meta property="og:url" content="{{ page.url | site.url | site.github.owner_url | absolute_url }}">
+  content="{{ site.description | page.description | post.description | default: site.github.project_tagline | smartify }}">
+<meta property="og:url" content="{{ site.url | page.url | site.github.owner_url | absolute_url }}">
 <meta property="og:tags" content="{{ page.tags }}">
 <meta property="og:image" content="{{ post.feature | page.feature | site.feature }}">
 <meta property="og:image:alt" content="{{ page.tags }}">
-
-<meta property="twitter:title" content="{{ post.title | page.title | site.title | default: site.github.repository_name | smartify }}">
 <!-- End SEO tag -->
