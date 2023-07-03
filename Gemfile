@@ -35,3 +35,4 @@ gem 'jemoji'
 gem 'jekyll-sitemap'
 gem 'jekyll-snippets'
 grm 'jekyll-admin'
+gem install jekyll-admin
