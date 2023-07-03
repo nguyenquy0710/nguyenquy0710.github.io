@@ -1,11 +1,11 @@
 <!-- Begin SEO tag -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Github NguyenQuy">
-<meta property="og:title" content="Github NguyenQuy">
 <meta property="og:locale" content="en_US">
-<meta property="og:url" content="{{ site.url | absolute_url }}">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:description" content="Architect is a theme for Github NguyenQuy.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ page.title | site.title | default: site.github.repository_name | smartify }}">
+<meta property="og:title" content="{{ page.title | site.title | default: site.github.repository_name | smartify }}">
+<meta property="og:description" content="{{ page.title | site.description | default: site.github.project_tagline }}">
+<meta property="og:url" content="{{ site.url | site.github.owner_url | absolute_url }}">
+<meta property="og:url" content="{{ page.url | site.github.owner_url | absolute_url }}">
 <meta property="og:tags" content="{{ page.tags }}">
 <meta property="og:image" content="{{ '/assets/images/favicon.png' | absolute_url }}">
 <meta property="og:image:alt" content="Architect is a theme for Github NguyenQuy.">
