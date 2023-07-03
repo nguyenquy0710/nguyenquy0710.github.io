@@ -1,15 +1,16 @@
 # https://github.com/pages-themes/architect
 # https://docs.github.com/en/pages/quickstart
 title: Github NguyenQuy
-author:
-  name: Nguyen Quy
-  email: hello@quyit.id.vn
-url: "https://github.quyit.id.vn"
-
+tag_text: Sharebar Demo
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >-
   Architect is a theme for Github NguyenQuy.
+author:
+  name: Nguyen Quy
+  email: hello@quyit.id.vn
+url: "https://github.quyit.id.vn"
+baseurl: /webjeda-sharebar
 
 # Build settings
 # theme: architect
@@ -19,10 +20,14 @@ encoding: utf-8
 timezone: Asia/Ho_Chi_Minh
 incremental: false
 highlighter: rouge
+markdown: kramdown
 gist:
   noscript: false
 excerpt_separator: <!--more-->
+# Tracker
+analytics: UA-83979019-1
 google_analytics:
+exclude: ["README.md"]
 plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
   - jekyll-feed
@@ -54,6 +59,45 @@ whitelist:
 
 emoji:
   src: "/assets/images/emoji"
+
+#compress.html
+compress_html:
+  clippings:
+    [
+      html,
+      div,
+      p,
+      ul,
+      td,
+      h1,
+      h2,
+      h3,
+      h4,
+      link,
+      meta,
+      footer,
+      nav,
+      img,
+      header,
+      hr,
+      br,
+      head,
+      style,
+      li,
+      ul,
+      ol,
+      time,
+      main,
+      script,
+      title,
+    ]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
 
 # static files
 defaults:
