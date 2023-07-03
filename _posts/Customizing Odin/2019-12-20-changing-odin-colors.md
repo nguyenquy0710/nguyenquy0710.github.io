@@ -7,15 +7,15 @@ author: mac
 short-description: Set Odin colors to your brand colors
 ---
 
------
+---
 
-*This article is a stub, more info coming soon. Colors in Odin are currently a bit messy and need to be cleaned up*
+_This article is a stub, more info coming soon. Colors in Odin are currently a bit messy and need to be cleaned up_
 
 To change the colors used in Odin, first navigate to `_scss/_variables.scss`.
 
 This file contains all of the colors used in Odin. The primary colors you should be concerned about changing are listed below.
 
-**$primary-color** - the main brand color used in Odin. This is used in places such as header background and link colors. 
+**$primary-color** - the main brand color used in Odin. This is used in places such as header background and link colors.
 
 **$highlight-color** - primarily used for link hover states.
 

@@ -8,5 +8,3 @@ short-description: How to add a new article to your Odin knowledge base
 ---
 
 **This article is coming soon**
-
-

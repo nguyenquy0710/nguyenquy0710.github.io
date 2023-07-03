@@ -8,5 +8,3 @@ short-description: Give credit to those who write your support articles
 ---
 
 **This article is coming soon**
-
-

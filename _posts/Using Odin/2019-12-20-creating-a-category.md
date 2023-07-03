@@ -8,4 +8,3 @@ short-description: Organize your articles with categories
 ---
 
 **This article is coming soon**
-

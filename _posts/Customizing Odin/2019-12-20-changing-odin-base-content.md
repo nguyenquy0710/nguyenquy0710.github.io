@@ -7,21 +7,19 @@ author: mac
 short-description: Adding your brand name, links, etc
 ---
 
------
+---
 
-*This article is a stub, more info coming soon. Some sections should be cleaned up.*
+_This article is a stub, more info coming soon. Some sections should be cleaned up._
 
 You can change virtually all of Odin's content from the `_config.yml` file. There are three things you cannot change from here, which need to be changed elsewhere - [colors](), [fonts](), and [categories](). Everything else is edited from this file.
-
-
 
 ##### Base Content
 
 At the top of `_config.yml` you'll find a number of base settings you should change. These include your site title and description, as well as your brand logo and name. It also includes options to change the home page header and subheader.
 
-
 ##### Navigation Links
-Out of the box, Odin supports 3 custom navigation links + a 'return home' button. Each link supports a name and a link. If you want to disable a link, just add `#` to both options for that link. 
+
+Out of the box, Odin supports 3 custom navigation links + a 'return home' button. Each link supports a name and a link. If you want to disable a link, just add `#` to both options for that link.
 
 The navigation button can be edited by changing the `nav_button` and `nav_button_link` options.
 
@@ -41,9 +39,6 @@ The more help section shows up under your list of categories on your homepage, a
 
 The social links section defines which social links show in the footer. By default Odin supports Instagram, Twitter, Facebook, LinkedIn, Email, and Github. Simply add the relevant social item to the right section, or add `#` if you don't want that social item to show in the footer.
 
-----
+---
 
 After making any changes to the above, run `jekyll serve` to see the changes locally. If you're satisfied with your changes, run `jekyll build` and then push your changes to your repo.
-
-
-

@@ -8,5 +8,3 @@ short-description: How to automatically deploy on Github Pages, for free!
 ---
 
 **This article is coming soon**
-
-
