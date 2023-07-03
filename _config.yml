@@ -4,6 +4,7 @@ title: Github NguyenQuy
 author:
   name: Nguyen Quy
   email: hello@quyit.id.vn
+url: https://github.quyit.id.vn
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -34,6 +35,7 @@ plugins:
   - jekyll-paginate
   - jekyll-titles-from-headings
   - jekyll-relative-links
+  - jekyll-import
   - jemoji
 
 # Enable safe mode

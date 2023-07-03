@@ -2,7 +2,9 @@
 layout: default
 city: San Francisco
 ---
-<p>{{ page.date }} - Written by {{ page.author }}</p>
+<p>{{ page.date | date_to_string: "ordinal", "US" }} - Written by {{ page.author }}</p>
 <p>{{ layout.city }}</p>
 
 {{ content }}
+
+{% include paginator.html %}

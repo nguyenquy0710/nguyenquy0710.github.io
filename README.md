@@ -22,3 +22,5 @@ Here are some ideas to get you started:
 # huong dan
 
 - [pages-themes/architect](https://github.com/pages-themes/architect/blob/master/README.md)
+- [Global VariablesPermalink](https://jekyllrb.com/docs/variables/)
+- [Liquid Filters](https://jekyllrb.com/docs/liquid/filters/)
