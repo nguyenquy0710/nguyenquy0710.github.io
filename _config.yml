@@ -34,8 +34,8 @@ permalink: /:categories/:year/:month/:day/:title:output_ext
 safe: true
 
 # paginate
-paginate: 5
-paginate_path: "/blog/page:num/"
+paginate: 6
+paginate_path: /page:num/
 
 content_type: Knowledge Base #Define whether this is a knowledge base, help center, or something else
 use_authors: true #Set this to false to disable showing post authors
@@ -111,11 +111,13 @@ plugins:
   - jekyll-import
   - jemoji
   - jekyll-sitemap
+  - jekyll-snippets
 # Whitelist plugins under safe mode. Note that `some-other-jekyll-plugin` is not listed here. Therefore, it will not be loaded under safe mode.
 whitelist:
   - jekyll-gist
   - jekyll-coffeescript
   - jekyll-seo-tag
+  - jekyll-paginate
 exclude: ["README.md"]
 
 # Exclude from processing.
