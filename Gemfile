@@ -38,3 +38,5 @@ gem 'jekyll-redirect-from'
 gem "jekyll-github-metadata"
 
 gem 'jekyll-admin', group: :jekyll_plugins
+
+bundle install
