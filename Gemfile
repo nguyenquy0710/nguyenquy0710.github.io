@@ -37,9 +37,9 @@ gem 'jekyll-snippets'
 gem 'jekyll-redirect-from'
 gem "jekyll-github-metadata"
 gem 'jekyll-gist'
-gem 'jekyll-archives'
-gem 'jekyll-email-protect'
-gem 'liquid', '~> 5.4' # https://www.rubydoc.info/gems/liquid/5.4.0
+# gem 'jekyll-archives'
+# gem 'jekyll-email-protect'
+# gem 'liquid', '~> 5.4' # https://www.rubydoc.info/gems/liquid/5.4.0
 
-gem 'jekyll-admin', group: :jekyll_plugins
-gem 'github-pages-health-check', '~> 1.18', '>= 1.18.1'
+# gem 'jekyll-admin', group: :jekyll_plugins
+# gem 'github-pages-health-check', '~> 1.18', '>= 1.18.1'
