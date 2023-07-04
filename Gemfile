@@ -34,5 +34,7 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 gem 'jemoji'
 gem 'jekyll-sitemap'
 gem 'jekyll-snippets'
-grm 'jekyll-admin'
-gem install jekyll-admin
+gem 'jekyll-redirect-from'
+gem "jekyll-github-metadata"
+
+gem 'jekyll-admin', group: :jekyll_plugins

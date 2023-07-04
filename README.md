@@ -60,3 +60,4 @@ _Full documentation is in the works and coming soon_
 ## plugin
 
 - [Jekyll Sitemap Generator Plugin](https://github.com/jekyll/jekyll-sitemap)
+- [Community-built themes and plugins to level up your Jekyll experience](https://jekyll.github.io/directory/)

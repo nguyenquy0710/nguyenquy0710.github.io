@@ -43,7 +43,8 @@ author:
   name: Nguyen Quy
   email: hello@quyit.id.vn
 
-brand_logo: logo.png
+logo: /assets/img/logo.png
+brand_logo: /assets/logo.png
 brand_name: Odin
 header: How can we help you?
 subheader: Support and documentation for Odin
@@ -113,12 +114,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-snippets
   - jekyll-admin
+  - jekyll-redirect-from
+  - jekyll-github-metadata
 # Whitelist plugins under safe mode. Note that `some-other-jekyll-plugin` is not listed here. Therefore, it will not be loaded under safe mode.
 whitelist:
   - jekyll-gist
   - jekyll-coffeescript
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-admin
+  - jekyll-redirect-from
+  - jekyll-github-metadata
 exclude: ["README.md"]
 
 # Exclude from processing.
@@ -172,3 +178,17 @@ compress_html:
   blanklines: false
   profile: false
   startings: []
+
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
+
+collections:
+  posts:
+    output: true
+    sidebar_label: News
