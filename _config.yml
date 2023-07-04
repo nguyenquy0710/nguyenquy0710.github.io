@@ -116,6 +116,8 @@ plugins:
   - jekyll-admin
   - jekyll-redirect-from
   - jekyll-github-metadata
+  - jekyll-archives
+  - jekyll-email-protect
 # Whitelist plugins under safe mode. Note that `some-other-jekyll-plugin` is not listed here. Therefore, it will not be loaded under safe mode.
 whitelist:
   - jekyll-gist
@@ -124,6 +126,7 @@ whitelist:
   - jekyll-paginate
   - jekyll-admin
   - jekyll-redirect-from
+  - jekyll-email-protect
   - jekyll-github-metadata
 exclude: ["README.md"]
 
@@ -188,7 +191,12 @@ jekyll_admin:
     - configuration
   homepage: "pages"
 
-collections:
-  posts:
-    output: true
-    sidebar_label: News
+jekyll-archives:
+  enabled: []
+  layout: archive
+  permalinks:
+    year: "/:year/"
+    month: "/:year/:month/"
+    day: "/:year/:month/:day/"
+    tag: "/tag/:name/"
+    category: "/category/:name/"
