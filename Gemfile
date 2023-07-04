@@ -31,11 +31,11 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # custom setup
-gem 'jemoji'
+# gem 'jemoji'
 gem 'jekyll-sitemap'
-gem 'jekyll-snippets'
-gem 'jekyll-redirect-from'
-gem "jekyll-github-metadata"
+# gem 'jekyll-snippets'
+# gem 'jekyll-redirect-from'
+# gem "jekyll-github-metadata"
 gem 'jekyll-gist'
 # gem 'jekyll-archives'
 # gem 'jekyll-email-protect'
