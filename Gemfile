@@ -43,5 +43,3 @@ gem 'liquid', '~> 5.4' # https://www.rubydoc.info/gems/liquid/5.4.0
 
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'github-pages-health-check', '~> 1.18', '>= 1.18.1'
-
-bundle
