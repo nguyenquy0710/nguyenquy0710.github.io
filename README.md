@@ -6,9 +6,9 @@ sitemap: false
 
 # nguyenquy0710.github.io
 
-    https://github.quyit.id.vn/
+    https://gist.quyit.id.vn/
 
-<a target="_blank" href="https://github.com/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/github/stars/nguyenquy0710/nguyenquy0710.github.io" /></a> <a target="_blank" href="https://hub.docker.com/r/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/docker/pulls/nguyenquy0710/nguyenquy0710.github.io" /></a> <a target="_blank" href="https://hub.docker.com/r/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/docker/v/nguyenquy0710/nguyenquy0710.github.io/latest?label=docker%20image%20ver." /></a> <a target="_blank" href="https://github.com/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/github/last-commit/nguyenquy0710/nguyenquy0710.github.io" /></a> <a target="_blank" href="https://opencollective.com/nguyenquy0710/nguyenquy0710.github.io"><img src="https://opencollective.com/nguyenquy0710/nguyenquy0710.github.io/total/badge.svg?label=Open%20Collective%20Backers&color=brightgreen" /></a>
+<a target="_blank" href="https://github.com/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/github/stars/nguyenquy0710/nguyenquy0710.github.io" /></a> <a target="_blank" href="https://hub.docker.com/r/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/docker/pulls/nguyenquy0710/nguyenquy0710.github.io" /></a> <a target="_blank" href="https://hub.docker.com/r/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/docker/v/nguyenquy0710/nguyenquy0710.github.io/latest?label=docker%20image%20ver." /></a> <a target="_blank" href="https://github.com/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/github/last-commit/nguyenquy0710/nguyenquy0710.github.io" /></a>
 
 <!--
 **nguyenquy0710/nguyenquy0710** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -29,19 +29,14 @@ Here are some ideas to get you started:
 
 ### My name is Sharath. I'm a web-developer
 
-<!-- ![Sharath's github stats](https://github-readme-stats.vercel.app/api?username=sharu725&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&bg_color=00aa55) -->
+<!-- ![Nguyen Quy's github stats](https://github-readme-stats.vercel.app/api?username=nguyenquy0710&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&bg_color=00aa55) -->
 
-<a href="https://github.com/sharu725/github-stats">
-<!-- <img src="https://github.com/sharu725/github-stats/blob/master/generated/overview.svg#gh-dark-mode-only" /> -->
-<img src="https://github-readme-stats.vercel.app/api?username=sharu725&include_all_commits=true&count_private=true&show_icons=true&line_height=27&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&bg_color=00aa55" />
-<img src="https://github.com/sharu725/github-stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
-<!-- <img src="https://github.com/sharu725/github-stats/blob/master/generated/overview.svg#gh-light-mode-only" />
-<img src="https://github.com/sharu725/github-stats/blob/master/generated/languages.svg#gh-light-mode-only" /> -->
+<a href="https://github.com/nguyenquy0710/github-stats">
+<img src="https://github-readme-stats.vercel.app/api?username=nguyenquy0710&include_all_commits=true&count_private=true&show_icons=true&line_height=27&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&bg_color=00aa55" />
 </a>
 
-[![twitter follow](https://img.shields.io/badge/twitter-follow-blue?logo=twitter&style=for-the-badge)](https://twitter.com/webjeda)
-[![webjeda web dev tutorials](https://img.shields.io/badge/visit-webejda.com-blue?logo=svelte&style=for-the-badge)](https://webjeda.com)
-[![webjeda svelte sveltekit videos](https://img.shields.io/badge/watch-videos-blue?logo=youtube&style=for-the-badge)](https://www.youtube.com/webjeda)
+[![twitter follow](https://img.shields.io/badge/twitter-follow-blue?logo=twitter&style=for-the-badge)](https://twitter.com/nhquydev)
+[![webjeda svelte sveltekit videos](https://img.shields.io/badge/watch-videos-blue?logo=youtube&style=for-the-badge)](https://www.youtube.com/@nhquydev)
 
 # Odin Knowledge Base
 
