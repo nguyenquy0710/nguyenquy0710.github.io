@@ -9,6 +9,7 @@ sitemap: false
     https://gist.quyit.id.vn/
 
 <a target="_blank" href="https://github.com/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/github/stars/nguyenquy0710/nguyenquy0710.github.io" /></a> <a target="_blank" href="https://hub.docker.com/r/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/docker/pulls/nguyenquy0710/nguyenquy0710.github.io" /></a> <a target="_blank" href="https://hub.docker.com/r/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/docker/v/nguyenquy0710/nguyenquy0710.github.io/latest?label=docker%20image%20ver." /></a> <a target="_blank" href="https://github.com/nguyenquy0710/nguyenquy0710.github.io"><img src="https://img.shields.io/github/last-commit/nguyenquy0710/nguyenquy0710.github.io" /></a>
+[![pages-build-deployment](https://github.com/nguyenquy0710/nguyenquy0710.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nguyenquy0710/nguyenquy0710.github.io/actions/workflows/pages/pages-build-deployment)
 
 <!--
 **nguyenquy0710/nguyenquy0710** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
