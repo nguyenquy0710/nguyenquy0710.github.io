@@ -1,202 +1,123 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-#
-# -----
-# https://github.com/pages-themes/architect
-# https://docs.github.com/en/pages/quickstart
-# -----
+title: devlopr
+subtitle: A Portfolio Jekyll Theme Built for Developers
+description: >- # this means to ignore newlines until "baseurl:"
+  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
 
-title: Site QuyIT
-description: Odin is a simple to setup and use Jekyll theme for help desks and knowledge bases. Hosts for free on Github Pages!
-# baseurl: /odin # the subpath of your site, e.g. /support
-url: https://github.quyit.id.vn # the base hostname AND PROTOCOL for your site, e.g. http://example.com
-# global permalink
-permalink: /:categories/:year/:month/:day/:title:output_ext
+url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: "" # the subpath of your site, e.g. /blog
 
-# Enable safe mode
-safe: true
+# syntax highlighter
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
 
-# paginate
-paginate: 6
-paginate_path: /page:num/
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
 
-content_type: Knowledge Base #Define whether this is a knowledge base, help center, or something else
-use_authors: true #Set this to false to disable showing post authors
-author:
-  name: Nguyen Quy
-  email: hello@quyit.id.vn
+collections:
+  products:
+    output: true
+  authors:
+    output: true
 
-logo: /assets/img/logo.png
-brand_logo: /assets/logo.png
-brand_name: Odin
-header: How can we help you?
-subheader: Support and documentation for Odin
-
-meta_image: odin-meta.png
-
-# Social Links
-twitter_username: TheTeaGuns
-facebook_page:
-github_username: TeaGuns
-email: m@credd.in
-linkedin_page:
-instagram_username:
-
-# Navivation
-nav_item_one: Github
-nav_item_one_link: https://github.com/TeaGuns/odin
-
-nav_item_two: Twitter
-nav_item_two_link: https://twitter.com/TheTeaGuns
-
-nav_item_three: #
-nav_item_three_link: #
-
-nav_button: Return to Odin Home
-nav_button_link: https://teaguns.github.io/odin/
-
-# More Help
-help_one_title: Odin Bugs
-help_one_content: If you find any bugs or problems with this theme, please open an issue over on Github.
-help_one_button: Github
-help_one_link: https://github.com/TeaGuns/odin/issues
-
-help_two_title: Twitter
-help_two_content: Feel free to tweet at me if you have suggestions for Odin. Or if you just want to say hi.
-help_two_button: Twitter
-help_two_link: https://twitter.com/theteaguns
+defaults:
+  - scope:
+      path: "gallery"
+    values:
+      permalink: /:path/:basename:output_ext
+  - scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+      permalink: /blog/authors/:slug
+  - scope:
+      path: "assets/**"
+    values:
+      sitemap: false
 
 # Build settings
-theme: minima
-encoding: utf-8
-timezone: Asia/Ho_Chi_Minh
-incremental: false
-highlighter: rouge
-markdown: kramdown
-excerpt_separator: <!--more-->
-analytics: UA-83979019-1
-google_analytics:
-gist:
-  noscript: false
 plugins:
-  - jekyll-feed
-  - jekyll-last-modified-at
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
-  - jekyll-gist
-  - jekyll-coffeescript
-  - jekyll-seo-tag
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-github-metadata
-  - jekyll-optional-front-matter
   - jekyll-paginate
-  - jekyll-titles-from-headings
-  - jekyll-relative-links
-  - jekyll-import
-  - jemoji
+  - jekyll-gist
+  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-snippets
   - jekyll-admin
-  - jekyll-redirect-from
-  - jekyll-github-metadata
-  - jekyll-archives
-  - jekyll-email-protect
-# Whitelist plugins under safe mode. Note that `some-other-jekyll-plugin` is not listed here. Therefore, it will not be loaded under safe mode.
-whitelist:
-  - jekyll-gist
-  - jekyll-coffeescript
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-admin
-  - jekyll-redirect-from
-  - jekyll-email-protect
-  - jekyll-github-metadata
-exclude: ["README.md"]
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-
-sass:
-  sass_dir: _scss
-  style: :compressed
-
-#compress.html
-compress_html:
-  clippings:
-    [
-      html,
-      div,
-      p,
-      ul,
-      td,
-      h1,
-      h2,
-      h3,
-      h4,
-      link,
-      meta,
-      footer,
-      nav,
-      img,
-      header,
-      hr,
-      br,
-      head,
-      style,
-      li,
-      ul,
-      ol,
-      time,
-      main,
-      script,
-      title,
-    ]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
-
+# Jekyll Admin Config
 jekyll_admin:
-  hidden_links:
-    - posts
-    - pages
-    - staticfiles
-    - datafiles
-    - configuration
-  homepage: "pages"
+  # hidden_links:
+  #   - posts
+  #   - pages
+  #   - staticfiles
+  #   - datafiles
+  #   - configuration
+  homepage: "posts"
 
-jekyll-archives:
-  enabled: []
-  layout: archive
-  permalinks:
-    year: "/:year/"
-    month: "/:year/:month/"
-    day: "/:year/:month/:day/"
-    tag: "/tag/:name/"
-    category: "/category/:name/"
+# Navigation
+urls:
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+  - text: Blog
+    url: /blog
+  - text: Gallery
+    url: /gallery
+  - text: Shop
+    url: /shop
+  - text: Contact
+    url: /contact
+
+# Edit Author details (For multi authors check _data/authors.yml)
+
+author_logo: profile.png
+author: John Doe
+author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
+author_email: "mail@sujaykundu.com"
+author_location: India
+author_website_url: "https://sujaykundu.com"
+
+typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - assets/bower_components/isotope-layout/README.md
+  - assets/bower_components/icono/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-svg-core/README.md
+  - assets/bower_components/ghosthunter/README.md
+  - assets/bower_components/nanobar/README.md
+  - assets/bower_components/lightgallery/demo/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-brands-svg-icons/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-solid-svg-icons/README.md
+  - assets/bower_components/jquery-mousewheel/README.md
+  - assets/bower_components/get-size/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome/README.md
+  - assets/bower_components/jquery-mousewheel/ChangeLog/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-regular/README.md
+  - assets/bower_components/desandro-matches-selector/README.md
+  - assets/bower_components/ev-emitter/README.md
+  - assets/bower_components/font-awesome/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-solid/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-brands/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-common-types/README.md
+  - assets/bower_components/ghosthunter/example/Index.html
+  - assets/bower_components/lightgallery/test/lightgallery.html
+  - assets/bower_components/masonry-layout/README.md
+  - assets/bower_components/imagesloaded/README.md
+
+destination: ./build

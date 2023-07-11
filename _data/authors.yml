@@ -1,8 +1,17 @@
-#Add your authors here
-
-mac:
-  name: Mac Reddin
-  image: mac.png
+# Add Authors here
 nhquydev:
   name: Nguyen Quy
-  image: nhquydev.png
+  username: nguyenquy0710
+  site: https://gist.quyit.id.vn
+  avatar: nguyenquy0710.png
+  bio: "Full Stack Web Developer, based in Bangalore, India"
+  email: mail@sujaykundu.com
+  social:
+    - title: "github"
+      url: "https://github.com/sujaykundu777"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/sujaykundu"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
+    - title: "facebook"
+      url: "https://www.facebook.com/sujay.kundu2"
