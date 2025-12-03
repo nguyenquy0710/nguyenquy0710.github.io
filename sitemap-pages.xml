@@ -1,0 +1,51 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for page in site.pages %}
+    {% unless page.sitemap == false or page.path contains 'sitemap' %}
+      <url>
+        <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
+        {% if page.last_modified_at %}
+          <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+        {% elsif page.date %}
+          <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+          <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        {% endif %}
+      </url>
+    {% endunless %}
+  {% endfor %}
+  {% for post in site.posts %}
+    {% unless post.sitemap == false %}
+      <url>
+        <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+        {% if post.last_modified_at %}
+          <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
+        {% elsif post.date %}
+          <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+          <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        {% endif %}
+      </url>
+    {% endunless %}
+  {% endfor %}
+  {% assign collections = site.collections | where_exp: "collection", "collection.output == true" %}
+  {% for collection in collections %}
+    {% for doc in collection.docs %}
+      {% unless doc.sitemap == false %}
+        <url>
+          <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+          {% if doc.last_modified_at %}
+            <lastmod>{{ doc.last_modified_at | date_to_xmlschema }}</lastmod>
+          {% elsif doc.date %}
+            <lastmod>{{ doc.date | date_to_xmlschema }}</lastmod>
+          {% else %}
+            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+          {% endif %}
+        </url>
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+</urlset>
