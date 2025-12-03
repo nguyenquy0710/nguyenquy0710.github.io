@@ -1,0 +1,17 @@
+name: "Set VERSION from file or default"
+description: "Read base version from VERSION file and export to GITHUB_ENV"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Read version from VERSION file or use default
+      shell: bash
+      run: |
+        if [ -f VERSION ]; then
+          BASE_VERSION=$(cat VERSION)
+          echo "📦 Found VERSION file: $BASE_VERSION"
+        else
+          BASE_VERSION="1.0"
+          echo "⚠️ VERSION file not found. Using default: $BASE_VERSION"
+        fi
+        echo "VERSION=${BASE_VERSION}.${{ github.run_number }}" >> $GITHUB_ENV
