@@ -1,0 +1,16 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>{{ site.url }}{{ site.baseurl }}/sitemap-pages.xml</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://gist.quyit.id.vn/ongsang-fruitgarden/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
