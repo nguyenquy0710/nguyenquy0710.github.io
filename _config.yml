@@ -3,7 +3,8 @@ subtitle: Full Stack Web Developer
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website and portfolio of Nguyen Quy - Full Stack Web Developer. Built with Jekyll and optimized for speed and readability.
 
-url: "https://nguyenquy0710.github.io" # the base hostname & protocol for your site
+# url: "https://nguyenquy0710.github.io" # the base hostname & protocol for your site
+url: "https://gist.quyit.id.vn"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # syntax highlighter
