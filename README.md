@@ -11,10 +11,19 @@ Visit my profile page at: [https://gist.quyit.id.vn](https://gist.quyit.id.vn)
 
 This is my personal GitHub profile page showcasing my work as a Software Engineer, DevOps enthusiast, and .NET developer.
 
+## ✨ Features
+
+- **Blog & Writing**: Links to my main blog at [blogs.nhquydev.net](https://blogs.nhquydev.net) and [Dev.to](https://dev.to/nguyenquy0710)
+- **Learning Resources**: Curated documentation for .NET, SQL, DevOps tools, and Full Stack Development
+- **Skills Showcase**: Comprehensive overview of technical expertise in Backend, Frontend, and DevOps
+- **GitHub Stats**: Visual representation of coding activity and contributions
+- **Featured Projects**: Highlighted repositories and open-source contributions
+
 ### Contact
 
 - 📧 Email: [nguyenquy.1096@gmail.com](mailto:nguyenquy.1096@gmail.com)
-- 📝 Blog: [dev.to/nguyenquy0710](https://dev.to/nguyenquy0710)
+- 📝 Blog: [blogs.nhquydev.net](https://blogs.nhquydev.net)
+- 📰 Dev.to: [dev.to/nguyenquy0710](https://dev.to/nguyenquy0710)
 - 🚀 Google Developer: [g.dev/nguyenquy](https://g.dev/nguyenquy)
 - 🐙 GitHub: [@nguyenquy0710](https://github.com/nguyenquy0710)
 
